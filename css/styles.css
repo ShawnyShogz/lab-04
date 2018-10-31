@@ -1,23 +1,62 @@
 /* MOBILE AND GLOBAL STYLES */
 
+nav{
+  display: none;
+}
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
 body {
   background: #fcc;
-} 
-
-
-
+}
+.menu{
+  background-color: red;
+  color:yellow;
+  line-height: 3em;
+}
+/*
+.menu:hover+nav, nav:hover{
+  /*color: #ffff00;*/
+  /*
+  display:flex;
+}
+*/
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
+.menu {
+  display: none;
+}
+
   body {
     background: #cfc;
-  } 
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+  }
+  nav a {
+    padding: 1.25em 1.5em;
+    color: #ccc;
+    background: #555;
+   text-decoration: none;
+    transition: all 1.5s;
+  }
+  nav a:hover {
+    color: #dfd;
+    background: #797;
+  }
+  nav{
+    display: flex;
+  }
+
+
+
 }
 
 
@@ -28,7 +67,9 @@ body {
 
   /* applies to screens wider than 999px */
 
+
+
   body {
     background: #ccf;
-  } 
+  }
 }
